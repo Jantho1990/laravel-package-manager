@@ -2,6 +2,9 @@
   "name": "laravel-package-manager",
   "version": "0.1.0",
   "description": "A tool for creating and managing Laravel packages.",
+  "bin": {
+    "lpm": "./bin/lpm.js"
+  },
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/Jantho1990/laravel-package-manager/issues"
   },
-  "homepage": "https://github.com/Jantho1990/laravel-package-manager#readme"
+  "homepage": "https://github.com/Jantho1990/laravel-package-manager#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "npm": "^6.1.0"
+  }
 }
