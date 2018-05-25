@@ -4,3 +4,7 @@ envvars:
   db_database: homestead
   db_username: homestead
   db_password: secret
+packages:
+  root: '~/jdev/projects/packages/'
+test-projects:
+  root: 'path/to/lpm/root'
