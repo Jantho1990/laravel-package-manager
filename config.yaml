@@ -1,0 +1,6 @@
+envvars:
+  db_host: 192.168.10.10
+  db_port: 3306
+  db_database: homestead
+  db_username: homestead
+  db_password: secret

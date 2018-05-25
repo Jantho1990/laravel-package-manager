@@ -15,8 +15,16 @@ function addPadding(bool) {
 
 /**
  * Log to console.
+ * 
+ * @param  title  "The header of the message."
+ * @param  content  "The message content."
+ * @param  otherData  "Any other messages you want to include."
+ * @param  color  "The font color of the content."
+ * @param  titleBgColor  "The background color for the title."
+ * @param  titleColor  "The font color of the title."
+ * @return void
  */
-function sendMessage(title, content, otherData, color, titleBgColor, titleColor) {
+function sendMessage(title = '', content = '', otherData = [], color, titleBgColor = 'bgWhite', titleColor = "black") {
   if (addSpacing) {
     console.log('')
   }
@@ -40,6 +48,11 @@ function sendMessage(title, content, otherData, color, titleBgColor, titleColor)
 
 /**
  * Send an error message.
+ * 
+ * @param  title  "The title of the message."
+ * @param  content  "The content of the message."
+ * @param  otherData  "Any other messages you want to include."
+ * @return void
  */
 function error(title, content, ...otherData) {
   sendMessage('ERROR --- ' + title, content, otherData, 'red')
@@ -47,6 +60,11 @@ function error(title, content, ...otherData) {
 
 /**
  * Send an info message.
+ * 
+ * @param  title  "The title of the message."
+ * @param  content  "The content of the message."
+ * @param  otherData  "Any other messages you want to include."
+ * @return void
  */
 function info(title, content, ...otherData) {
   sendMessage(title, content, otherData, 'blue')
@@ -54,6 +72,11 @@ function info(title, content, ...otherData) {
 
 /**
  * Send a warning message.
+ * 
+ * @param  title  "The title of the message."
+ * @param  content  "The content of the message."
+ * @param  otherData  "Any other messages you want to include."
+ * @return void
  */
 function warning(title, content, ...otherData) {
   sendMessage('WARNING --- ' + title, content, otherData, 'yellow', 'yellow', 'black')
