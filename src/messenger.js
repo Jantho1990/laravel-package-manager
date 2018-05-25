@@ -31,7 +31,7 @@ function sendMessage(title, content, otherData, color, titleBgColor, titleColor)
   console.log(chalk[color](content))
   if (otherData.length !== 0) {
     console.log(chalk.white.bold('OTHER DATA:'))
-    otherData.forEach((data) => console.log(chalk.white(data)))
+    otherData.forEach(data => console.log(chalk.white(data)))
   }
   if (addSpacing) {
     console.log('')

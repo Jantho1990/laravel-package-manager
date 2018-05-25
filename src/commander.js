@@ -1,6 +1,6 @@
 const program = require('commander'),
-  laravel = require('./laravel'),
-  messenger = require('./messenger')
+      laravel = require('./laravel'),
+      messenger = require('./messenger')
 
 program
   .option('-n, --name', 'Change name of test project directory.')
